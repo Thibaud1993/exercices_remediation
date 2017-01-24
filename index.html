@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title></title>
+        <meta charset="UTF-8">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+            integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+
+        <script
+            src="https://code.jquery.com/jquery-3.1.1.js"
+            integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="
+            crossorigin="anonymous"></script>
+
+        <script src="exo4.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <!-- Section 1 -->
+            <div id="s1">
+                <h2></h2>
+                <p id="s1_paragraphe"></p>
+                <p id="s1_messageToAlert">Je suis un message d'alerte</p>
+                <div class="alert" id="s2_success">I'm a success message</div>
+                <div class="alert" id="s2_info">I'm a info message</div>
+                <div class="alert" id="s2_warning">I'm a warning message</div>
+                <div class="alert" id="s2_danger">I'm a danger message</div>
+            </div>
+            <!-- fin de la section 1 -->
+
+            <hr />
+
+            <!-- Section 2 -->
+            <div id="s2">
+                <h2>Mise a jour instantané de mon nom.</h2>
+                <form>
+                     <div class="form-group">
+                        <label for="s2_source">Votre nom</label>
+                        <input type="text" name="" value="" id="s2_source">
+                        <p class="help-block">Votre nom est <span id="s2_destination"></span></p>
+                    </div>
+                </form>
+
+                <form>
+                     <div class="form-group">
+                        <label for="s2_number">Nombre</label>
+                        <select name="" id="s2_number">
+                            <option value="0">0</option>
+                            <option value="10">10</option>
+                            <option value="-10">-10</option>
+                        </select>
+                        <p class="help-block">la Valeur : <span id="s2_pos" class="label label-default"></span></p>
+                    </div>
+                </form>
+
+                <form id="check-age">
+                    <div class="form-group">
+                        <label for="year">Année de naissance</label>
+                        <input type="text" name="year" id="s2_year">
+                    </div>
+                    <div class="form-group hidden" id="s2_name">
+                        <label for="year">Votre nom</label>
+                        <input type="text" name="name" id="s2_name_input"/>
+                    </div>
+                    <button type="submit" class="btn btn-default hidden" id="s2_submit">Submit</button>
+                </form>
+            </div>
+            <!-- fin de la section 2 -->
+
+            <hr />
+
+            <!-- Section 3 -->
+            <div id="s3">
+                <h2>Bataille navale.</h2>
+                <ul>
+                    <li><a href="#">toucher</a></li>
+                    <li><a href="#">toucher</a></li>
+                    <li><a href="#">toucher</a></li>
+                    <li><a href="#">toucher</a></li>
+                </ul>
+            </div>
+            <!-- fin de la section 3 -->
+
+        </div><!-- /.container -->
+    </body>
+</html>
